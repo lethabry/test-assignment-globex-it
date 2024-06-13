@@ -1,0 +1,44 @@
+@import '../variables';
+
+.user-card {
+  cursor: pointer;
+  flex-basis: 357px;
+  padding: 24px 24px 0;
+  min-height: 314px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+  &__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 125%;
+    color: $plumbum;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  &__contact {
+    display: flex;
+    gap: 14px;
+
+    img {
+      max-width: 24px;
+      max-height: 24px;
+      object-position: center;
+    }
+
+    a {
+      width: calc(100% - 24px - 14px);
+      overflow-wrap: break-word;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 143%;
+      color: $asphalt;
+    }
+  }
+}

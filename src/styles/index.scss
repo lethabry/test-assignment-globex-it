@@ -1,0 +1,5 @@
+@import '../assets/fonts/fonts', 'globals', 'normalize',
+  './utils/visually-hidden';
+
+@import './components/search', './components/user-list',
+  './components/user-item', './components/popup';

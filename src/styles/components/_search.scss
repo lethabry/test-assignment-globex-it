@@ -1,0 +1,36 @@
+@import '../variables';
+
+.form {
+  position: relative;
+
+  &__input {
+    width: 100%;
+    appearance: none;
+    height: 48px;
+    border: 1px solid $blueberry;
+    border-radius: 24px;
+    padding: 10px;
+    box-shadow: 0 5px 0 0 rgb(0 0 0/0.1);
+
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-decoration {
+      display: none;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 25%;
+    right: 25px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: {
+      color: transparent;
+      image: url('../../assets/images/search.svg');
+      size: cover;
+      repeat: no-repeat;
+      position: center;
+    }
+  }
+}
